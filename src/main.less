@@ -1,0 +1,18 @@
+@blue: '#666';
+@opac: 1;
+.p{
+  text-align: center;
+}
+.box{
+  background-color: red;
+  &:hover{
+    background-color: #dd5555;
+  }
+  transition: all 1s;
+  p{
+    font-size: 22px;
+    color: @blue;
+    opacity: @opac*0.5;
+    .p();
+  }
+}
